@@ -1,0 +1,63 @@
+
+.video-info-grid{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  column-gap: 16px;
+}
+
+.profile-pictures{
+  width: 36px;
+  border-radius: 50px;
+}
+.video-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+.image-1{
+  width: 100%;
+}
+.thumbnail-1{
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.video-time{
+  background-color: black;
+  color: white;
+  padding: 5px;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+  font-family: Arial, 
+  Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 4px 4px 4px;
+  border-radius: 2px;
+}
+
+
+
+
+@media only screen and (max-width: 1200px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (max-width:500px){
+  .video-grid{
+    display: flex;
+    flex-direction: column;
+
+  }
+} 
